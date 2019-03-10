@@ -1,17 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalIcons = createGlobalStyle`
-  @font-face {
-    font-family: "iconfont";
-    src: url("./iconfont.eot?t=1552141881779"); /* IE9 */
-    src: url("./iconfont.eot?t=1552141881779#iefix") format("embedded-opentype"),
-      /* IE6-IE8 */
-        url("data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPUAAsAAAAAB+wAAAOGAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqDKIMEATYCJAMQCwoABCAFhG0HRxv1BsiOxDiGcgklFpObePhaK9/v6dnr7T0gCqHl8oQKQahUHLAz0YmREYqNuKM2bQJVSNU5s5oIObHIQkicbE1O/Jv2xMT+55jp0iaQ32ZzyYjnwwGOonVg0QFywHcgeMPYlRexm0C1aCDJ2dzianCQGYMC8VTg5eCQUso1maEInZKZuRtfoVXSO+IMgC/+38d/iAwHkrZhjDx3P0cF6b+8nsWSHf874JaLANZ4erB5NNgLZOJhqfE2MgzuRapKexvHgaJIjNU06Fns//+IvRdhMU2k3v+86DDS+8FRGGr45WVTSPwaxCwTxUL2DeyUQUEXr4BvYODmvTxLmlImaJdpqXRoqF6RVlNaesjQrmBqju9g+W56GqhRf1BTz0nGyGRj/BOTa7asgNcr6WmHJZKrMj5MNmYMxXZZ4dK4qmZGT/fkJaf8vYfNCuB9ZLNXb9/aq2bn1YHKa9fY69dlV6/WXLky0uJXB/Tkz752rXGqN9s1ZvVyr5rOmTOsnge4vIt9sy8i5/+KrGua1LIaIlMhpF63+Z1qwUfjwyS2p0KN/VjBaQRdlJ74ZKQMn/bz+u3f62OvYPgrnWci9k+LHioh4m0puEb4Sg+/5/enbC64Pdu8LbDZx5f23uz/oiBq6MLvmlq/SSW5XqU5cL6pkzx2lOw0aS7NkVrjWGtrE7F4MQF5TZgOlcQiTEOXej+mnN78+jrTt3vH5N9f2Qj5zw54CbDznzxA+oQx5BCyNfyevEUm/8VePuLsxlEuyV8d6Mso+LnyfQJy7IyxgfasX8FSWP/MlHvABXJUjqHKWWbZxjUAzZwdvO0BCVXFn4oy6t4Y5gkQ60PhLAhJnwVoFOvIjN0LrZ6j0FGcgGqPvPk9Y0SkyF3sNgFAGLYekkHfoTHsLDJj70Jr0lvoGA4SqivhsWLPZghUlojkGKkYRSMjKI0GztJgKsisRHytTi4mOT6eRaJF8DARoeHZSB4yIHGMMZY6PhJjjuFEo57JBfshnc7ImESjBilxqBpjU2JYGFf2pVClUQ+UM0SIHIaoMBQaMQRKRgacmx+jcr9fCeHV0pETa7Iq1CxEZCG0zogQKrwFMk9oaJV1LfdY1OFFwjAOgyMy0mPkAj2iM4NGDFN5Nw1ECQul7uE3SRSGcnFthaHzi/VPuAIqY0KOFE3kaKVTcunRbzRIqUZKrWBwLJHzBoETkAgAAAA=")
-        format("woff2"),
-      url("./iconfont.woff?t=1552141881779") format("woff"),
-      url("./iconfont.ttf?t=1552141881779") format("truetype"),
-      /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-        url("./iconfont.svg?t=1552141881779#iconfont") format("svg"); /* iOS 4.1- */
+  @font-face {font-family: "iconfont";
+    src: url('./iconfont.eot?t=1552216016514'); /* IE9 */
+    src: url('./iconfont.eot?t=1552216016514#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQYAAsAAAAACIAAAAPJAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqEGINkATYCJAMUCwwABCAFhG0HTht2BxEVnH3JfibYthDWWTnv/ETJCn6RngkeeDzzfeQuS04ahSYT0A6UGgAoY9tBDT25uRn3jmFEhGFKzoP/5Us/KWnLCvn1x73T37IE5rNvuYy5bKxpBRh33gU2xqYFEugAKVFuGLuJOIzdEIBFEpmIUmUq1cJEAwYJQLRv06oJZkyNLkkUmAgCcmbqQDERA1OOkmeBCe7nxRtyZILEUICR1VqWbk6x59Evqyuv30t9isDpzwhI80ABmYAG0TXX3B7lezNRWMbvNMUACxOJfB79PPPzPC+r+/2Y/BVJLfiHBwqNRIAIAMQHAVCM82l4Ho1RKHiemZ0nycOikPCyOvdcdjIAsAAbWAh8ABATEcv9vlSFh5tmtB0aFxQU2qvWvmtcvVpL1PKIGzdc33XHiUZ4r1V3919Xr0Go5QTVstrZdepOT2LNjavdZI89BixhHbRGnxc+1/W5JxbybF2Jd5U95ogQrtsqq+vzWc70qdSKau6ZmYquu/R0gph6sxO2inXnrNmxLbVn17VMza5fd7oOu3bNc/Vqw9GYHjN6/vXrfUbHONN9a1ZEe6bNmjk16s/eOnXuZe1WXI7YunWELDYIvFRsn/77V++rV3LRn8Fatb/Wc3GwZdlL6UpdahHin0peb1ukqkeWaNqmyA39p0i37sfyZRVG8Syd0jttghvYFYsVeNrQ7X4mfvSfBKk/pU7Cv6D5neWBMbnqCilGViEs/5qR8V88GLWl/J05XbYn6hcbZ8dsSfCyfM66i3607RF/ROUy0VVKc6HvNHX8mJoGGZRB5FPD0KkD+solSyQr6MszWbVczDO4S2OeWMEjfn+bFZfCO/LPNyd7k19e8gHw+9VB5ZJ9qo4a4P+gbqtCP8B3SP3f/m8UWuibaWsAbq4Ju8hm+b0a5YW3KKE253U30ykBtMwDGkPrJViSso0Pg2wGsEp4syUv2R7hfj/WaIRGgSlzWJAEkhgUJqkwmpAJDGxyQQAmRcEio7LzbSJ1RSF0PCCDYQwIwmwASQgHQBHmHEYT7oFBjHcQQFgKLBwRuaJNmgyclRQ0ii+Y/sB2WwnpNPMSr+je0UiU55KeKCc7oK2aZGDEFaWPMefHdaoEJNsCA7MfxrjBLptHq9Wsuvd1TXkPquy2JBklBY3iC6Y/sN1WovU1S73/iu4djZRUNOifKCe3Dm3V1MCM4rVWxbm0Pz+uUyW+H8m2wMAaMULvBnt+N49Wq7mFe+9rrhbVFVfjS5dr3ABYgM0MMW2n26O77bxeipviBDYq7Yw28JpWNm5lYpQkAQAAAA==') format('woff2'),
+    url('./iconfont.woff?t=1552216016514') format('woff'),
+    url('./iconfont.ttf?t=1552216016514') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('./iconfont.svg?t=1552216016514#iconfont') format('svg'); /* iOS 4.1- */
   }
 
   .iconfont {
@@ -21,5 +17,6 @@ const GlobalIcons = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  
 `;
 export default GlobalIcons;
