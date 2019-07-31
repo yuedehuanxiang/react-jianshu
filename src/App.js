@@ -14,11 +14,11 @@ class App extends Component {
         <Fragment>
           <GlobalStyle />
           <GlobalIcons />
-          <Header />
           <Router>
             <div>
+              <Header />
               <Route path="/" exact component={Home} />
-              <Route path="/detail" exact component={Detail} />
+              <Route path="/detail/:id" exact component={Detail} />
             </div>
           </Router>
         </Fragment>
