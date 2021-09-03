@@ -3,7 +3,7 @@ import { WriterWrapper } from "../style";
 
 class Writer extends PureComponent {
   render() {
-    return <WriterWrapper>writer</WriterWrapper>;
+    return <WriterWrapper>writer1</WriterWrapper>;
   }
 }
 
